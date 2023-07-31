@@ -6,6 +6,7 @@
 
 The global vehicle market is in a fluid state, as it constantly undergoes disruptive changes resulting from global conflicts, national regulations and technological shifts. To tackle with this instability, BMW intends to improve its current time series prediction algorithm. This study aims to identify events altering the course of BMW’s sales/ registration forecasts from one year to another by developing a time series anomaly detection algorithm and derive a generalizable nomenclature classifying such events. To recognize patterns in monthly global vehicle registrations data sequences, a Long Short-Term Memory (LSTM) model, which is a form of recurrent neural networks (RNNs), is employed.
 
+This project was done as a group work.
 
 ## The Repository
 
