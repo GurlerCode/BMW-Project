@@ -6,16 +6,15 @@
 
 The global vehicle market is in a fluid state, as it constantly undergoes disruptive changes resulting from global conflicts, national regulations and technological shifts. To tackle with this instability, BMW intends to improve its current time series prediction algorithm. This study aims to identify events altering the course of BMW’s sales/ registration forecasts from one year to another by developing a time series anomaly detection algorithm and derive a generalizable nomenclature classifying such events. To recognize patterns in monthly global vehicle registrations data sequences, a Long Short-Term Memory (LSTM) model, which is a form of recurrent neural networks (RNNs), is employed.
 
+This project was done as a group work.
 
 ## The Repository
 
-In the repository you will find here, scientific Python programs have been implemented to implement the project steps.
+In the repository you will find here, scientific Python programs have been implemented to implement the project steps. 
+
+As a condition of NDA, data and some methods cannot be shared. Therefore, only the targeted .ipynb codes and readme file are available in the repository. Since the repository is missing, the current code will not work as it is.
 
 **It consists of the following parts:**
-
-/data : This is where the input data and output data is stored as .csv file. Output data is the predictions and true value specified country and brand with year.
-
-/figures : A place to register your figures. This can be the average number of registrations by country, a yearly display of estimated and actual values found by country and brand, and more.
 
 /tasks : The section where the data is analyzed, the model is built and predictions are made, in short, the targets are tried to be completed.
 
@@ -27,6 +26,12 @@ In the repository you will find here, scientific Python programs have been imple
 - 2.1.Bonus1.WithHyperparameters demonstrates the anomaly detection process by applying it to with different hyperparameters and thresholds which are found bt HyperparameterTuning method.
 - 3.0.Bonus2.Predictions does the prediction using the LSTM model for car registrations according to country and brand.The Mean Squared Error (MSE) is calculated to evaluate the model's performance, and the predictions were saved to a CSV file. It also creats a plot to visualize the true values and predictions.
 
+**The following folders and files have not been added to the repository due to NDA.**
+
+/data : This is where the input data and output data is stored as .csv file. Output data is the predictions and true value specified country and brand with year.
+
+/figures : A place to register your figures. This can be the average number of registrations by country, a yearly display of estimated and actual values found by country and brand, and more.
+
 /src : The most important directory: the sources root. It contains multiple .py files:
 
 - utils.py stores some utility functions you can call in other files.
@@ -37,31 +42,7 @@ In the repository you will find here, scientific Python programs have been imple
 
 main.py is left open except for a few methods. The reason for not adding anything new to main.py is that each operation is performed sequentially by the .ipynb files in the tasks folder. If functions are to be executed in main, they can be implemented by calling them.
 
-
-In the repo, main consists of a few methods Mr. Simon wrote. 
-
-get_data() will read the .csv file and do the split by underscores into several feature columns.
-
-get_filtered_timeseries() takes on some basic formatting and filters to one or more values per
-feature column.
-
-def main():
-
-df_prep = get_data()
-
-timeseries = get_filtered_timeseries(df_prep,
-'Deutschland',
-'BMW',
-'Limousine',
-'3er')
-
-plot_sample()
-
-Take a look at the way I constructed this repository - it is a standard proceeding and will seem familiar
-to you if your background is computer science. If not, you will get the chance to dive in now!
-
-
-## The Dataset 
+## The Dataset Explanation
 
 - The column c_SRC contanis the respective time series entity - registrations stands for historical vehicle registrations.
 - The column c_SMP_KEY is a unique identifier and can be split up by underscores using split_by_underscores(column)
@@ -70,7 +51,7 @@ to you if your background is computer science. If not, you will get the chance t
 
  ## The Objectives
 
-Your main objective is to analyze the provided vehicle registrations data and chose an apt time series anomaly detection algorithm.
+The main objective is to analyze the provided vehicle registrations data and chose an apt time series anomaly detection algorithm.
 
 ## Taks 1.1 : Analyze the time series data
 It is important to understand how vehicle lifecycles evolve. Try to find registration all time highs, lifecycle
@@ -158,13 +139,6 @@ The rounded predictions and true values are saved to a CSV file named "Predictio
 
 This entire process helps in building and training an LSTM model to predict future car registrations for the specified country ("Deutschland") and brand ("BMW") based on historical data. The predictions are evaluated using MSE, and the results are visualized and saved for further analysis and reporting.
 
-## Questions
-
-If you really need an urgent response, feel free to
-contact us directly.
-
-
 ## Acknowledgments
 
-We are provided with a real world time series data being subject to secrecy from the BMW Group for this
-project.
+We are provided with a real world time series data being subject to secrecy from the BMW Group for this project.
