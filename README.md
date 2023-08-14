@@ -10,7 +10,7 @@ This project was done as a group work.
 
 ## The Repository
 
-In the repository you will find here, scientific Python programs have been implemented to implement the project steps. 
+In the repository, you will find, scientific Python programs have been implemented to complete the project steps. 
 
 As a condition of NDA, data and some methods cannot be shared. Therefore, only the targeted .ipynb codes and readme file are available in the repository. Since the repository is missing, the current code will not work as it is.
 
